@@ -2,12 +2,9 @@ async function fetchEmploymentData() {
     try {
         const response = await fetch('./json/workExperience.json');
 
-       // Har tagit bort throw exception. Osäker på om meddelandet response.status är menigsfullt.
-       //OBS finns kvar i scriptet education.js 
-
         const data = await response.json();
+        
         displayEmploymentData(data);
-
     }
     catch (error) {
         console.error(error)

@@ -2,16 +2,12 @@ async function fetchEducationData() {
     try {
         const response = await fetch('./json/education.json');
 
-        if (!response.ok) {
-            throw new Error(response.status); //Kolla upp try catch
-        }
-
         const data = await response.json();
-        displayEducationData(data);
 
+        displayEducationData(data);
     }
     catch (error) {
-        console.error('Fel vid inläsningen')
+        console.error(error);
     }
 }
 

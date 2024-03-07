@@ -1,5 +1,10 @@
 function changeBackground() {
     document.getElementById("easterEgg").style.background = 'yellow';
+    document.getElementById("header").style.background = 'purple';
+    document.getElementById("who-am-i").style.background = 'purple';
+    document.getElementById("my-interests").style.background = 'purple';
+    document.getElementById("my-interests").style.color = 'white';
+
 };
 
 document.addEventListener('DOMContentLoaded', function() {
