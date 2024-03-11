@@ -180,6 +180,16 @@ dt {
     margin: 10px 0;
     list-style: none;
 }
+#contact-details li .fa-linkedin {
+    font-size: 2rem;
+    color: rgb(10, 102, 194);
+}
+
+#contact-details li .fa-github {
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
 
 #profilePic {
     width: 6em;
