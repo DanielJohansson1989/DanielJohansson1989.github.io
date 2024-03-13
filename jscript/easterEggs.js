@@ -13,15 +13,19 @@ document.addEventListener('DOMContentLoaded', function() {
   
     document.addEventListener('keydown', function(event) {
       combination += event.key;
-  
+      
+      if (combination.length === 4 && combination !== '1337') {
+        combination = '';
+      }
+
       if (combination === '1337') {
         modal.style.display = 'block';
         combination = '';
       }
     });
   
-    var closeBtn = document.getElementsByClassName('close')[0];
-    closeBtn.addEventListener('click', function() {
+    const closeButton = document.getElementById('close');
+    closeButton.addEventListener('click', function() {
       modal.style.display = 'none';
     });
   });
